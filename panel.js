@@ -9,7 +9,6 @@ function handleClick(event) {
 	if (event.target.className=="button-show-content") {
     document.querySelector('#img').style.display = 'none';
     document.querySelector('#dataDiv').style.visibility = 'visible';
-  	// sendObjectToInspectedPage({action: "code", content: "console.log('"+event.target.dataset.content+"')"});
     document.querySelector('#dataDiv').innerHTML = "<div style=\"word-wrap: break-word;color:white;\">"+ event.target.dataset.content  +"</div>";
   }
 }
